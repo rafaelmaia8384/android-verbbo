@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:id="@+id/textTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adicione as palavras-chaves para identificar a sua publicação. Quanto mais, melhor!"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"/>
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chipGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="24dp">
+
+
+    </com.google.android.material.chip.ChipGroup>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputPalavra"
+            android:layout_marginTop="5dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            app:errorTextAppearance="@style/ErrorAppearance"
+            android:hint="Palavra-chave">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editPalavra"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapSentences"
+                    android:maxLength="35"
+                    android:lines="1"
+                    android:imeOptions="actionSend"
+                    android:textSize="12sp"
+                    android:minLines="1"
+                    android:maxLines="1"/>
+
+                <Button
+                    android:id="@+id/buttonAdd"
+                    android:layout_marginLeft="5dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="3dp"
+                    android:layout_width="95dp"
+                    android:layout_height="38dp"
+                    android:text="Adicionar"
+                    android:textSize="10sp"
+                    android:textAllCaps="false"
+                    android:backgroundTint="@color/colorTextDark"
+                    android:textColor="@color/colorWindowBackground" />
+
+            </LinearLayout>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

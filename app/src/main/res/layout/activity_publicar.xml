@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ActivityPublicar">
+
+    <LinearLayout
+        android:id="@+id/rootLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:clickable="true"
+                android:layout_marginLeft="5dp"
+                android:padding="4dp"
+                android:onClick="buttonBack"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:tint="@color/colorWindowBackground"
+                android:src="@drawable/icon_back"
+                android:foreground="?android:attr/selectableItemBackground"/>
+
+            <LinearLayout
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:text="Verbbo"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorAccent"/>
+
+                <TextView
+                    android:layout_marginLeft="1dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text=".com.br"
+                    android:textColor="@color/colorAccent"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Publicar no portal oficial"
+                        android:textSize="12sp"/>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardViewVerbbo"
+                        android:clickable="true"
+                        android:onClick="buttonSelecionarVerbbo"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardBackgroundColor="@color/colorGreenAccent"
+                        android:elevation="10dp"
+                        app:cardCornerRadius="12dp"
+                        android:foreground="?android:attr/selectableItemBackground">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_margin="3dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="0dp"
+                            android:elevation="0dp"
+                            android:focusable="false">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="200dp"
+                                    android:tint="#FFFFFF"
+                                    android:background="@color/colorTextDark"
+                                    android:src="@drawable/icon_elemento_imagem" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="100dp"/>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp">
+
+                        <View
+                            android:layout_centerInParent="true"
+                            android:layout_width="100dp"
+                            android:layout_height="3dp"
+                            android:background="@color/colorGrey"/>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Publicar em meus portais"
+                        android:textSize="12sp"/>
+
+                    <LinearLayout
+                        android:id="@+id/layoutPortais"
+                        android:layout_marginTop="20dp"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+
+                    </LinearLayout>
+
+                    <Button
+                        android:onClick="buttonCriarPortal"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="38dp"
+                        android:text="Criar portal"
+                        android:textSize="12sp"
+                        android:textAllCaps="false"
+                        android:backgroundTint="@color/colorTextDark"
+                        android:textColor="@color/colorWindowBackground" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp" />
+
+                </LinearLayout>
+
+            </ScrollView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="bottom|right"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="38dp"
+                    android:text="Publicar"
+                    android:textSize="12sp"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWindowBackground" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@drawable/toolbar_gradient"/>
+
+            <View
+                android:clickable="true"
+                android:id="@+id/layoutPopupBackground"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#4F000000"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</layout>

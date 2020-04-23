@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#424242</color>
+    <color name="colorPrimaryDark">#1b1b1b</color>
+    <color name="colorAccent">#43a047</color>
+
+    <color name="colorWindowBackground">#ededed</color>
+    <color name="colorWhite">#ffffff</color>
+
+    <color name="colorGreenAccent">#22AA22</color>
+    <color name="colorTextLight">#ededed</color>
+    <color name="colorGrey">#cccccc</color>
+    <color name="colorTextDark">#888888</color>
+    <color name="colorTextBlack">#222222</color>
+
+    <color name="colorCategoriaEntretenimento">#4db6ac</color>
+    <color name="colorCategoriaEsportes">#7986cb</color>
+    <color name="colorCategoriaPolitica">#e57373</color>
+    <color name="colorCategoriaSaude">#fff176</color>
+    <color name="colorCategoriaSeguranca">#a1887f</color>
+    <color name="colorCategoriaCiencia">#ffb74d</color>
+    <color name="colorCategoriaArtes">#aed581</color>
+    <color name="colorCategoriaTurismo">#4fc3f7</color>
+    <color name="colorCategoriaModa">#ba68c8</color>
+    <color name="colorCategoriaEconomia">#e0e0e0</color>
+    <color name="colorCategoriaEducacao">#90a4ae</color>
+    <color name="colorCategoriaUnselected">#FFFFFF</color>
+
+</resources>

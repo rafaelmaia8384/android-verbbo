@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:id="@+id/textTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selecione abaixo a(s) categoria(s) em que se enquadra a sua publicação:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"/>
+
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/categoria01"
+                    android:clickable="true"
+                    android:layout_margin="5dp"
+                    android:padding="3dp"
+                    android:elevation="5dp"
+                    app:cardElevation="5dp"
+                    app:cardBackgroundColor="@color/colorCategoriaUnselected"
+                    app:cardCornerRadius="24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_margin="3dp"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        app:cardCornerRadius="20dp"
+                        app:cardBackgroundColor="@color/colorCategoriaPolitica">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="9sp"
+                            android:layout_gravity="center"
+                            android:textColor="@color/colorTextBlack"
+                            android:text="Política"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/categoria02"
+                    android:clickable="true"
+                    android:layout_margin="5dp"
+                    android:padding="3dp"
+                    android:elevation="5dp"
+                    app:cardElevation="5dp"
+                    app:cardBackgroundColor="@color/colorCategoriaUnselected"
+                    app:cardCornerRadius="24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_margin="3dp"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        app:cardCornerRadius="20dp"
+                        app:cardBackgroundColor="@color/colorCategoriaEconomia">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="9sp"
+                            android:layout_gravity="center"
+                            android:textColor="@color/colorTextBlack"
+                            android:text="Economia"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/categoria03"
+                    android:clickable="true"
+                    android:layout_margin="5dp"
+                    android:padding="3dp"
+                    android:elevation="5dp"
+                    app:cardElevation="5dp"
+                    app:cardBackgroundColor="@color/colorCategoriaUnselected"
+                    app:cardCornerRadius="24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_margin="3dp"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        app:cardCornerRadius="20dp"
+                        app:cardBackgroundColor="@color/colorCategoriaSaude">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="9sp"
+                            android:layout_gravity="center"
+                            android:textColor="@color/colorTextBlack"
+                            android:text="Saúde"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/categoria04"
+                    android:clickable="true"
+                    android:layout_margin="5dp"
+                    android:padding="3dp"
+                    android:elevation="5dp"
+                    app:cardElevation="5dp"
+                    app:cardBackgroundColor="@color/colorCategoriaUnselected"
+                    app:cardCornerRadius="24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_margin="3dp"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        app:cardCornerRadius="20dp"
+                        app:cardBackgroundColor="@color/colorCategoriaSeguranca">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="9sp"
+                            android:layout_gravity="center"
+                            android:textColor="@color/colorTextBlack"
+                            android:text="Segurança"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/categoria05"
+                    android:clickable="true"
+                    android:layout_margin="5dp"
+                    android:padding="3dp"
+                    android:elevation="5dp"
+                    app:cardElevation="5dp"
+                    app:cardBackgroundColor="@color/colorCategoriaUnselected"
+                    app:cardCornerRadius="24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_margin="3dp"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        app:cardCornerRadius="20dp"
+                        app:cardBackgroundColor="@color/colorCategoriaEsportes">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="9sp"
+                            android:layout_gravity="center"
+                            android:textColor="@color/colorTextBlack"
+                            android:text="Esportes"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/categoria06"
+                    android:clickable="true"
+                    android:layout_margin="5dp"
+                    android:padding="3dp"
+                    android:elevation="5dp"
+                    app:cardElevation="5dp"
+                    app:cardBackgroundColor="@color/colorCategoriaUnselected"
+                    app:cardCornerRadius="24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_margin="3dp"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        app:cardCornerRadius="20dp"
+                        app:cardBackgroundColor="@color/colorCategoriaCiencia">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="9sp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textColor="@color/colorTextBlack"
+                            android:text="Ciência e tecnologia"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/categoria07"
+                    android:clickable="true"
+                    android:layout_margin="5dp"
+                    android:padding="3dp"
+                    android:elevation="5dp"
+                    app:cardElevation="5dp"
+                    app:cardBackgroundColor="@color/colorCategoriaUnselected"
+                    app:cardCornerRadius="24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_margin="3dp"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        app:cardCornerRadius="20dp"
+                        app:cardBackgroundColor="@color/colorCategoriaArtes">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="9sp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textColor="@color/colorTextBlack"
+                            android:text="Artes"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/categoria08"
+                    android:clickable="true"
+                    android:layout_margin="5dp"
+                    android:padding="3dp"
+                    android:elevation="5dp"
+                    app:cardElevation="5dp"
+                    app:cardBackgroundColor="@color/colorCategoriaUnselected"
+                    app:cardCornerRadius="24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_margin="3dp"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        app:cardCornerRadius="20dp"
+                        app:cardBackgroundColor="@color/colorCategoriaTurismo">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="9sp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textColor="@color/colorTextBlack"
+                            android:text="Turismo"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/categoria09"
+                    android:clickable="true"
+                    android:layout_margin="5dp"
+                    android:padding="3dp"
+                    android:elevation="5dp"
+                    app:cardElevation="5dp"
+                    app:cardBackgroundColor="@color/colorCategoriaUnselected"
+                    app:cardCornerRadius="24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_margin="3dp"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        app:cardCornerRadius="20dp"
+                        app:cardBackgroundColor="@color/colorCategoriaModa">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="9sp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textColor="@color/colorTextBlack"
+                            android:text="Moda e beleza"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/categoria10"
+                    android:clickable="true"
+                    android:layout_margin="5dp"
+                    android:padding="3dp"
+                    android:elevation="5dp"
+                    app:cardElevation="5dp"
+                    app:cardBackgroundColor="@color/colorCategoriaUnselected"
+                    app:cardCornerRadius="24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_margin="3dp"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        app:cardCornerRadius="20dp"
+                        app:cardBackgroundColor="@color/colorCategoriaEntretenimento">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="9sp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textColor="@color/colorTextBlack"
+                            android:text="Entretenimento"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/categoria11"
+                    android:clickable="true"
+                    android:layout_margin="5dp"
+                    android:padding="3dp"
+                    android:elevation="5dp"
+                    app:cardElevation="5dp"
+                    app:cardBackgroundColor="@color/colorCategoriaUnselected"
+                    app:cardCornerRadius="24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_margin="3dp"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        app:cardCornerRadius="20dp"
+                        app:cardBackgroundColor="@color/colorCategoriaEducacao">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="9sp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textColor="@color/colorTextBlack"
+                            android:text="Educação"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:visibility="invisible"
+                    android:id="@+id/categoria0"
+                    android:clickable="true"
+                    android:layout_margin="5dp"
+                    android:padding="3dp"
+                    android:elevation="5dp"
+                    app:cardElevation="5dp"
+                    app:cardBackgroundColor="@color/colorCategoriaUnselected"
+                    app:cardCornerRadius="24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_margin="3dp"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        app:cardCornerRadius="20dp"
+                        app:cardBackgroundColor="@color/colorAccent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="9sp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textColor="@color/colorTextBlack"
+                            android:text="nulo"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
